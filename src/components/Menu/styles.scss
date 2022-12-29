@@ -1,0 +1,37 @@
+@import "../../sass/variables.scss";
+
+.contentMenu {
+  margin: 49px 0;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 33px 0 33px;
+
+  > button {
+    color: map-get($colors, gray_700);
+    font-size: map-get($font-size, md);
+    text-transform: uppercase;
+    background: none;
+    border: none;
+    transition: 0.7s;
+  }
+  :hover {
+    color: #000;
+    cursor: pointer;
+    border-bottom: 1px solid black;
+  }
+}
+
+nav ul li:nth-last-child(1) {
+  > button {
+    color: map-get($colors, red_500);
+  }
+}
+
+nav ul li:first-child {
+  > button {
+    font-weight: 700;
+  }
+}

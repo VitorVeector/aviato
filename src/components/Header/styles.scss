@@ -1,0 +1,44 @@
+@import "../../sass/variables.scss";
+
+.headerComponent {
+  max-width: 1170px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  border-bottom: map-get($colors, gray_200) solid 1px;
+
+  .components {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1110px;
+    width: 100%;
+
+    .phoneNumber {
+      display: flex;
+      align-items: center;
+
+      #SlPhone {
+        color: map-get($colors, gray_700);
+        margin-right: 10px;
+      }
+
+      p {
+        font-size: map-get($font-size, md);
+      }
+    }
+
+    .itemCart {
+      display: flex;
+
+      #SlBag {
+        margin-right: 10px;
+      }
+
+      p {
+        font-size: map-get($font-size, md);
+      }
+    }
+  }
+}
