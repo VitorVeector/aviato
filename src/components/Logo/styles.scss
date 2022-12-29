@@ -1,0 +1,8 @@
+@import "../../sass/variables.scss";
+
+.title {
+  color: map-get($colors, gray_700);
+  font-size: map-get($font-size, xxl);
+  font-family: "Cantata One", serif;
+  font-weight: 200;
+}
