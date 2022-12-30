@@ -1,0 +1,16 @@
+@import "../../sass/variables.scss";
+
+.TextSlideContent {
+  max-width: 1110px;
+  width: 100%;
+
+  > .titleSlideContent {
+    font-weight: 600;
+    font-size: 60px;
+    color: map-get($colors, gray_700);
+  }
+
+  > .subTitleSlideContent {
+    color: map-get($colors, gray_500);
+  }
+}
