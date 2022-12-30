@@ -9,6 +9,7 @@ export const Home = () => {
             <Header />
             <Menu />
             <Slider />
+
         </div>
     )
 }
