@@ -1,0 +1,23 @@
+@import "../../sass/variables.scss";
+
+.popularContent {
+  margin-top: 104px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 100px;
+
+  > .popularTitle {
+    text-align: center;
+    text-transform: uppercase;
+    color: map-get($colors, gray_700);
+    margin-bottom: 50px;
+  }
+
+  > .popularContainer {
+    display: grid;
+    gap: 50px 30px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-bottom: 50px;
+  }
+}

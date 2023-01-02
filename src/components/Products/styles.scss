@@ -1,0 +1,76 @@
+@import "../../sass/variables.scss";
+
+.productsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  max-width: 1170px;
+  width: 100%;
+
+  padding-bottom: 50px;
+  border-bottom: solid 1px map-get($colors, gray_200);
+
+  .productsTitle {
+    text-align: center;
+    text-transform: uppercase;
+    color: map-get($colors, gray_700);
+    margin-bottom: 50px;
+  }
+
+  .products {
+    display: flex;
+    > .otherProducts {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      > .menDresses,
+      .jewellery {
+        height: 345px;
+        width: 540px;
+        cursor: pointer;
+      }
+
+      > .menDresses {
+        margin-bottom: 30px;
+        background-image: url("../../../public/assets/category-1.jpg");
+        background-position: center;
+        background-size: cover;
+      }
+
+      > .jewellery {
+        background-image: url("../../../public/assets/category-2.jpg");
+        background-position: center;
+        background-size: cover;
+      }
+    }
+
+    > .womenDresses {
+      height: 720px;
+      width: 540px;
+      margin-left: 30px;
+      cursor: pointer;
+      background-image: url("../../../public/assets/category-3.jpg");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    .productElement {
+      padding: 50px;
+
+      > h2 {
+        color: map-get($colors, gray_700);
+        font-size: map-get($font-size, md);
+        text-transform: uppercase;
+      }
+
+      > p {
+        text-transform: uppercase;
+        color: map-get($colors, gray_500);
+        font-size: map-get($font-size, md);
+      }
+    }
+  }
+}

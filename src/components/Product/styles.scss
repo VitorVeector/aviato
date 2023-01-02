@@ -1,0 +1,42 @@
+@import "../../sass/variables.scss";
+
+.productContainer {
+  height: 400px;
+  width: 255px;
+
+  > .imgProduct {
+    > img {
+      height: 100%;
+      width: 100%;
+      cursor: pointer;
+    }
+  }
+
+  > .dataProduct {
+    padding: 21px;
+
+    > h3 {
+      font-size: map-get($font-size, md);
+      color: map-get($colors, gray_500);
+      font-weight: 400;
+    }
+
+    > div {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      > p {
+        font-size: map-get($font-size, md);
+        color: map-get($colors, gray_700);
+        font-weight: bold;
+      }
+
+      > button {
+        cursor: pointer;
+        background: none;
+        border: none;
+      }
+    }
+  }
+}

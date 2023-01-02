@@ -1,3 +1,4 @@
+import { Button } from "../Button"
 import "./styles.scss"
 
 export const SlideContent = () => {
@@ -7,11 +8,7 @@ export const SlideContent = () => {
                 <h1 className="titleSlideContent">Summer <br />Collection</h1>
                 <p className="subTitleSlideContent">Separamos os melhores looks para você neste 2019</p>
             </div>
-            <button className="btnSlider">
-                <p>
-                    Shop Now
-                </p>
-            </button>
+            <Button value="Shop Now" />
         </div>
     )
 }

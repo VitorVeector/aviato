@@ -18,22 +18,3 @@
     color: map-get($colors, gray_200);
   }
 }
-
-.btnSlider {
-  background-color: map-get($colors, gray_700);
-  border: none;
-  padding: 5px;
-  width: 210px;
-
-  > p {
-    padding: 25px 55px;
-    border: solid 1px map-get($colors, gray_300);
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: map-get($font-size, md);
-    color: map-get($colors, gray_200);
-  }
-  :hover {
-    cursor: pointer;
-  }
-}
