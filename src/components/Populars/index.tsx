@@ -5,7 +5,7 @@ import "./styles.scss"
 
 import { useEffect, useState } from "react"
 
-interface IProducts {
+export interface IProducts {
     id: number;
     name: string;
     category: string;

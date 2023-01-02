@@ -1,0 +1,108 @@
+@import "../../sass/variables.scss";
+
+.categoryContent {
+  max-width: 1110px;
+  margin-top: 100px;
+  width: 100%;
+  justify-content: center;
+
+  .selectCategory {
+    margin-bottom: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    button {
+      background: none;
+      border: none;
+      margin: 0 20px;
+      padding: 14px 12px;
+      font-size: map-get($font-size, sm);
+      color: map-get($colors, gray_300);
+      text-transform: uppercase;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .activeBtn {
+      border: 1px solid map-get($colors, gray_700);
+      border-bottom: 2px solid map-get($colors, gray_700);
+      color: map-get($colors, gray_700);
+    }
+  }
+  .filter {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+
+    > .filterText {
+      max-width: 420px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+
+      p {
+        color: map-get($colors, gray_300);
+
+        b {
+          color: map-get($colors, gray_700);
+        }
+      }
+    }
+
+    > .filterIcon {
+      max-width: 100px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: map-get($colors, gray_300);
+
+      > .activeFilter {
+        color: map-get($colors, gray_700);
+      }
+    }
+  }
+  > .categoryItems {
+    display: grid;
+    gap: 50px 30px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-bottom: 50px;
+  }
+
+  > .pagination {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+
+    ul {
+      display: flex;
+      list-style: none;
+
+      li {
+        font-size: lg;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 32px;
+        height: 32px;
+        margin-right: 2px;
+        cursor: pointer;
+
+        button {
+          width: 32px;
+          height: 32px;
+          background: none;
+          font-weight: bold;
+          border: 1px solid map-get($colors, gray_300);
+          cursor: pointer;
+        }
+      }
+
+      .activePage {
+        background-color: map-get($colors, gray_700);
+        color: map-get($colors, gray_200);
+      }
+    }
+  }
+}
