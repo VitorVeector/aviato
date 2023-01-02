@@ -1,0 +1,197 @@
+@import "../../sass/variables.scss";
+
+.ProductContainer {
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1110px;
+
+  > .images {
+    > .mainImage {
+      height: 600px;
+      width: 580px;
+      background-image: url("../../../public/assets/REGATA_FRUITS.jpg");
+      background-size: cover;
+    }
+
+    > .otherImages {
+      margin-top: 20px;
+      display: flex;
+      justify-content: space-between;
+      max-width: 580px;
+      width: 100%;
+
+      > div {
+        height: 100px;
+        width: 130px;
+        background-color: map-get($colors, gray_200);
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      :hover {
+        border: 1px solid map-get($colors, gray_700);
+        cursor: pointer;
+      }
+
+      .firstImg {
+        background-image: url("../../../public/assets/REGATA_FRUITS.jpg");
+      }
+      .secondImg {
+        background-image: url("../../../public/assets/REGATA_FRUITS_2.jpg");
+      }
+      .thirdImg {
+        background-image: url("../../../public/assets/REGATA_FRUITS_3.jpg");
+      }
+    }
+  }
+
+  > .description {
+    max-width: 430px;
+
+    > .descriptionText {
+      > h2 {
+        font-size: 30px;
+        font-weight: 400;
+        color: map-get($colors, gray_300);
+        margin-bottom: 30px;
+      }
+
+      > h1 {
+        color: map-get($colors, gray_700);
+        margin-bottom: 50px;
+      }
+
+      > p {
+        font-size: map-get($font-size, md);
+        color: map-get($colors, gray_300);
+        padding-bottom: 30px;
+        border-bottom: 1px solid map-get($colors, gray_200);
+      }
+    }
+
+    .measure {
+      > p {
+        margin-top: 30px;
+        color: map-get($colors, gray_700);
+        font-size: map-get($font-size, md);
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+      }
+
+      > .colors {
+        display: flex;
+
+        span {
+          width: 20px;
+          height: 20px;
+          margin: 0 4px;
+        }
+
+        .blue {
+          background-color: #0069cb;
+          margin-left: -2px;
+        }
+        .pink {
+          background-color: #ff6565;
+        }
+
+        .violet {
+          background-color: #7854ff;
+        }
+
+        .green {
+          background-color: #00cd65;
+        }
+
+        .select {
+          border: 1px solid map-get($colors, gray_700);
+        }
+      }
+
+      > .sizes {
+        display: flex;
+
+        > span {
+          font-weight: bold;
+          text-transform: uppercase;
+          margin-right: 14px;
+          padding: 8px 10px;
+          background-color: map-get($colors, gray_200);
+          cursor: pointer;
+        }
+
+        .select {
+          background-color: map-get($colors, gray_700);
+          color: map-get($colors, gray_200);
+        }
+      }
+
+      > .addItem {
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid map-get($colors, gray_200);
+        padding-bottom: 50px;
+        > div {
+          display: flex;
+          justify-content: space-between;
+          padding: 20px 16px;
+          max-height: 65px;
+          height: 100%;
+          width: 170px;
+          border: 1px solid map-get($colors, gray_300);
+
+          > p {
+            font-weight: bold;
+            cursor: pointer;
+          }
+        }
+      }
+
+      > .secondDescription {
+        > div {
+          margin-top: 30px;
+          margin-bottom: 30px;
+          display: flex;
+          width: 100%;
+          justify-content: space-between;
+          h1 {
+            color: map-get($colors, gray_700);
+            font-size: map-get($font-size, md);
+            font-weight: bold;
+            text-transform: uppercase;
+          }
+          p {
+            cursor: pointer;
+          }
+        }
+
+        > p {
+          color: map-get($colors, gray_300);
+          padding-bottom: 30px;
+          border-bottom: 1px solid map-get($colors, gray_200);
+        }
+      }
+
+      > .specifications {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        margin-top: 30px;
+        padding-bottom: 30px;
+        border-bottom: 1px solid map-get($colors, gray_200);
+
+        > p {
+          color: map-get($colors, gray_700);
+          font-weight: bold;
+        }
+
+        > span {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

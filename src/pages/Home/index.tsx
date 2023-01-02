@@ -13,7 +13,7 @@ export const Home = () => {
             <Menu />
             <Slider />
             <Products />
-            <Populars />
+            <Populars title="Populares" />
             <Footer />
         </div>
     )

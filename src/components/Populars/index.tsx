@@ -14,7 +14,11 @@ export interface IProducts {
     photo: string
 }
 
-export const Populars = () => {
+interface PopularsProps {
+    title: string
+}
+
+export const Populars = ({ title }: PopularsProps) => {
 
     const [products, setProducts] = useState<IProducts[]>()
 
@@ -26,7 +30,7 @@ export const Populars = () => {
 
     return (
         <div className="popularContent">
-            <h1 className="popularTitle">Populares</h1>
+            <h1 className="popularTitle">{title}</h1>
             <div className="popularContainer">
                 {
                     products?.map(product => (
